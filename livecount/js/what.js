@@ -27,12 +27,20 @@ let up9_5m = new Audio("lesonn/test/9.5m.mp3");
 let up10m = new Audio("lesonn/test/10m.mp3");
 let up11m = new Audio("lesonn/test/11m.mp3");
 
+let up26m = new Audio("lesonn/test/26m.mp3");
+let up27m = new Audio("lesonn/test/27m.mp3");
+let up28m = new Audio("lesonn/test/28m.mp3");
+let up29m = new Audio("lesonn/test/29m.mp3");
+let up30m = new Audio("lesonn/test/30m.mp3");
+let up31m = new Audio("lesonn/test/31m.mp3");
+let up32m = new Audio("lesonn/test/32m.mp3");
 let up33m = new Audio("lesonn/test/33m.mp3");
 let up34m = new Audio("lesonn/test/34m.mp3");
 let up35m = new Audio("lesonn/test/35m.mp3");
 let up36m = new Audio("lesonn/test/36m.mp3");
 let up37m = new Audio("lesonn/test/37m.mp3");
 let up38m = new Audio("lesonn/test/38m.mp3");
+let up39m = new Audio("lesonn/test/39m.mp3");
 let up47m = new Audio("lesonn/test/47m.mp3");
 let up48m = new Audio("lesonn/test/48m.mp3");
 let up51m = new Audio("lesonn/test/51m.mp3");
@@ -100,6 +108,20 @@ function playsound(video) {
 		up10m.cloneNode(true).play();
 	} else if (video >= 11000000 && video < 12000000) {
 		up11m.cloneNode(true).play();
+	} else if (video >= 26000000 && video < 27000000) {
+		up26m.cloneNode(true).play();
+	} else if (video >= 27000000 && video < 28000000) {
+		up27m.cloneNode(true).play();
+	} else if (video >= 28000000 && video < 29000000) {
+		up28m.cloneNode(true).play();
+	} else if (video >= 29000000 && video < 30000000) {
+		up29m.cloneNode(true).play();
+	} else if (video >= 30000000 && video < 31000000) {
+		up30m.cloneNode(true).play();
+	} else if (video >= 31000000 && video < 32000000) {
+		up31m.cloneNode(true).play();
+	} else if (video >= 32000000 && video < 33000000) {
+		up32m.cloneNode(true).play();
 	} else if (video >= 33000000 && video < 34000000) {
 		up33m.cloneNode(true).play();
 	} else if (video >= 34000000 && video < 35000000) {
@@ -112,6 +134,8 @@ function playsound(video) {
 		up37m.cloneNode(true).play();
 	} else if (video >= 38000000 && video < 39000000) {
 		up38m.cloneNode(true).play();
+	} else if (video >= 39000000 && video < 40000000) {
+		up39m.cloneNode(true).play();
 	} else if (video >= 47000000 && video < 48000000) {
 		up47m.cloneNode(true).play();
 	} else if (video >= 48000000 && video < 49000000) {
@@ -211,9 +235,9 @@ function tg() {
 				if (this.status === 200) {
 					degar = JSON.parse(CULER.responseText);
 					if (mileston == 0) {
-						folo = degar.photos;
+						folo = degar.total_messages;
 					} else {
-						folo = mileston - degar.photos;
+						folo = mileston - degar.total_messages;
 					}
 					wownon = "mathias_love_dogs";
 					if (folo > oldcount) {

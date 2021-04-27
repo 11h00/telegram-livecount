@@ -247,8 +247,8 @@ function tg() {
 					oldcount2 = followers;
 					oldcount = folo;
 
-					folo = degar.photos;
-					followers = degar.members;
+					folo = degar.total_messages;
+					followers = degar.total_members;
 
 					wownon = "mathias channel";
 					if (wownon.length == 0) {
