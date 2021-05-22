@@ -1,10 +1,11 @@
 <?php
-    $request = curl_init("https://t.me/s/mathias444");
+	$channelname = isset($_GET["name"]) ? $_GET["name"] : "mathias444";
+    $request = curl_init("https://t.me/s/$channelname");
     curl_setopt($request, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($request, CURLOPT_COOKIE, "");
     $reponce = curl_exec($request);
     preg_match_all('!<span class="counter_value">(.*?)</span>!', $reponce, $count);
-	preg_match_all('!<a class="tgme_widget_message_date" href="https://t.me/mathias444/(.*?)">!', $reponce, $photocount);
+	preg_match_all('!<a class="tgme_widget_message_date" href="https://t.me/' . $channelname . '/(.*?)">!', $reponce, $photocount);
 	
     // print_r($photocount);
     $jsoncountresponce["total_members"] = (isset($count[1][0])) ? intval($count[1][0]) : 0;
