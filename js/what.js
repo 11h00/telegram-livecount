@@ -274,7 +274,7 @@ function tg() {
 					}
 					wownon = "mathias_love_dogs";
 					if (folo > oldcount) {
-						if (1) {
+						if (true) {
 							normalthemechange();
 							playsound(folo)
 						} else if (useuname == "c_en_d_minor"){
@@ -290,7 +290,7 @@ function tg() {
 						}
 					}
 					if (folo < oldcount) {
-						if () {
+						if (true) {
 							normalthemechange();
 							santourianmathiasdown.cloneNode(true).play();
 						} else if (useuname == "c_en_d_minor"){
