@@ -290,7 +290,7 @@ function tg() {
 						}
 					}
 					if (folo < oldcount) {
-						if () {
+						if (true) {
 							normalthemechange();
 							santourianmathiasdown.cloneNode(true).play();
 						} else if (useuname == "c_en_d_minor"){
