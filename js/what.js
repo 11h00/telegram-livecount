@@ -16,7 +16,7 @@ var downsound = new Audio("lesonn/followdown.mp3");
 oldcount = 0;
 let up1m = new Audio("lesonn/test/1m.mp3");
 let up2m = new Audio("lesonn/test/2m.mp3");
-let up3m = new Audio("lesonn/up2.mp3");
+let up3m = new Audio("lesonn/test/3m.mp3");
 let up4m = new Audio("lesonn/test/4m.mp3");
 let up5m = new Audio("lesonn/test/5m.mp3");
 let up6m = new Audio("lesonn/test/6m.mp3");
@@ -26,6 +26,7 @@ let up9m = new Audio("lesonn/test/9.0m.mp3");
 let up9_5m = new Audio("lesonn/test/9.5m.mp3");
 let up10m = new Audio("lesonn/test/10m.mp3");
 let up11m = new Audio("lesonn/test/11m.mp3");
+let up12m = new Audio("lesonn/test/12m.mp3");
 
 let up26m = new Audio("lesonn/test/26m.mp3");
 let up27m = new Audio("lesonn/test/27m.mp3");
@@ -77,6 +78,16 @@ let up80m = new Audio("lesonn/test/80m.mp3");
 let up89m = new Audio("lesonn/test/89m.mp3");
 let up90m = new Audio("lesonn/test/90m.mp3");
 let up91m = new Audio("lesonn/test/91m.mp3");
+let up92m = new Audio("lesonn/test/92m.mp3");
+let up93m = new Audio("lesonn/test/93m.mp3");
+let up94m = new Audio("lesonn/test/94m.mp3");
+let up95m = new Audio("lesonn/test/95m.mp3");
+let up96m = new Audio("lesonn/test/96m.mp3");
+let up97m = new Audio("lesonn/test/97m.mp3");
+let up98m = new Audio("lesonn/test/98m.mp3");
+let up99m = new Audio("lesonn/test/99m.mp3");
+let up100m = new Audio("lesonn/test/100m.mp3");
+let up110m = new Audio("lesonn/test/110m.mp3");
 
 let up_c_en_d = new Audio("lesonn/up_444.mp3");
 let down_c_en_d = new Audio("lesonn/down_444.mp3");
@@ -108,6 +119,8 @@ function playsound(video) {
 		up10m.cloneNode(true).play();
 	} else if (video >= 11000000 && video < 12000000) {
 		up11m.cloneNode(true).play();
+	} else if (video >= 12000000 && video < 13000000) {
+		up12m.cloneNode(true).play();
 	} else if (video >= 26000000 && video < 27000000) {
 		up26m.cloneNode(true).play();
 	} else if (video >= 27000000 && video < 28000000) {
@@ -206,6 +219,26 @@ function playsound(video) {
 		up90m.cloneNode(true).play();
 	} else if (video >= 91000000 && video < 92000000) {
 		up91m.cloneNode(true).play();
+	} else if (video >= 92000000 && video < 93000000) {
+		up92m.cloneNode(true).play();
+	} else if (video >= 93000000 && video < 94000000) {
+		up93m.cloneNode(true).play();
+	} else if (video >= 94000000 && video < 95000000) {
+		up94m.cloneNode(true).play();
+	} else if (video >= 95000000 && video < 96000000) {
+		up95m.cloneNode(true).play();
+	} else if (video >= 96000000 && video < 97000000) {
+		up96m.cloneNode(true).play();
+	} else if (video >= 97000000 && video < 98000000) {
+		up97m.cloneNode(true).play();
+	} else if (video >= 98000000 && video < 99000000) {
+		up98m.cloneNode(true).play();
+	} else if (video >= 99000000 && video < 100000000) {
+		up99m.cloneNode(true).play();
+	} else if (video >= 100000000 && video < 110000000) {
+		up100m.cloneNode(true).play();
+	} else if (video >= 110000000 && video < 120000000) {
+		up110m.cloneNode(true).play();
 	} else {
 		santourianmathiasup.cloneNode(true).play();
 	}
@@ -241,7 +274,7 @@ function tg() {
 					}
 					wownon = "mathias_love_dogs";
 					if (folo > oldcount) {
-						if (useuname == "most_igtv_videos" || useuname == "51.6m" || useuname == "ilove_51") {
+						if (1) {
 							normalthemechange();
 							playsound(folo)
 						} else if (useuname == "c_en_d_minor"){
@@ -257,7 +290,7 @@ function tg() {
 						}
 					}
 					if (folo < oldcount) {
-						if (useuname == 'most_igtv_videos' || useuname == "51.6m" || useuname == "ilove_51") {
+						if () {
 							normalthemechange();
 							santourianmathiasdown.cloneNode(true).play();
 						} else if (useuname == "c_en_d_minor"){
