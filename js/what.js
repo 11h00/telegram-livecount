@@ -279,6 +279,7 @@ function tg() {
 							playsound(folo)
 						} else if (useuname == "c_en_d_minor"){
 							up_c_en_d.cloneNode(true).play()
+							$('.odometer').css('color', 'red')
 						} else {
 							if (normaltheme == true) {
 								$('.odometer').css('color', 'white')
@@ -294,6 +295,7 @@ function tg() {
 							normalthemechange();
 							santourianmathiasdown.cloneNode(true).play();
 						} else if (useuname == "c_en_d_minor"){
+							$('.odometer').css('color', 'red')
 							down_c_en_d.cloneNode(true).play()
 						} else {
 							bad = false;
