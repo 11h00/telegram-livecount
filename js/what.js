@@ -278,7 +278,7 @@ function tg() {
 					}
 					wownon = "mathias messages";
 					if (folo > oldcount) {
-						if (userame != "c_en_d_minor" || userame != "mathias777" || userame != "mathias_santourian") {
+						if (useuname != "c_en_d_minor" || useuname != "mathias777" || useuname != "mathias_santourian") {
 							normalthemechange();
 							playsound(folo)
 						} else if (useuname == "c_en_d_minor"){
@@ -301,7 +301,7 @@ function tg() {
 						}
 					}
 					if (folo < oldcount) {
-						if (userame != "c_en_d_minor" || userame != "mathias777" || userame != "mathias_santourian") {
+						if (useuname != "c_en_d_minor" || useuname != "mathias777" || useuname != "mathias_santourian") {
 							normalthemechange();
 							santourianmathiasdown.cloneNode(true).play();
 						} else if (useuname == "c_en_d_minor"){
