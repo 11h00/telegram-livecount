@@ -7,6 +7,8 @@ var useuname = "most_igtv_videos";
 var mileston = 0
 var normaltheme = false;
 var UPsound = new Audio("lesonn/up2.mp3");
+let mathias_up = new Audio("lesonn/up_follower_mathias.mp3");
+let mathias_down = new Audio("lesonn/followdown.mp3");
 
 var badtheme = false;
 
@@ -280,6 +282,9 @@ function tg() {
 						} else if (useuname == "c_en_d_minor"){
 							up_c_en_d.cloneNode(true).play()
 							$('.odometer').css('color', 'red')
+						} else if (useuname == "mathias_santourian"){
+							mathias_up.cloneNode(true).play()
+							$('.odometer').css('color', '#00ffff')
 						} else {
 							if (normaltheme == true) {
 								$('.odometer').css('color', 'white')
@@ -297,6 +302,9 @@ function tg() {
 						} else if (useuname == "c_en_d_minor"){
 							$('.odometer').css('color', 'red')
 							down_c_en_d.cloneNode(true).play()
+						} else if (useuname == "mathias_santourian"){
+							mathias_down.cloneNode(true).play()
+							$('.odometer').css('color', '#00ffff')
 						} else {
 							bad = false;
 							if (normaltheme == true) {
