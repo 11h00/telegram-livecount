@@ -3,7 +3,7 @@ var incre = 1000;
 var pgp;
 var folo = 0;
 var updatecount = 500
-var useuname = "c_en_d_minor";
+var useuname = "mathias";
 var mileston = 0
 var normaltheme = false;
 var UPsound = new Audio("lesonn/up2.mp3");
@@ -278,7 +278,7 @@ function tg() {
 					}
 					wownon = "mathias messages";
 					if (folo > oldcount) {
-						if (false) {
+						if (true) {
 							normalthemechange();
 							playsound(folo)
 						} else if (useuname == "c_en_d_minor"){
@@ -301,7 +301,7 @@ function tg() {
 						}
 					}
 					if (folo < oldcount) {
-						if (false) {
+						if (true) {
 							normalthemechange();
 							santourianmathiasdown.cloneNode(true).play();
 						} else if (useuname == "c_en_d_minor"){
